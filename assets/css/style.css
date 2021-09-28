@@ -13,3 +13,15 @@ body{
   font-weight: 400;
   color: #151311;
 }
+
+h1, h2 {
+  font-family: "Odibee Sans", cursive;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+#logo {
+  font-size: 4em;
+  text-align: center;
+  margin: 20px;
+}
