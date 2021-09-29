@@ -9,10 +9,11 @@
 }
 
 /* Style body and headers */
-body{
+body {
   font-family: Nunito, sans-serif;
   font-weight: 500;
   color: #151311;
+  background-color: #789053;
 }
 
 h1, h2 {
@@ -44,12 +45,44 @@ nav li {
 nav a {
   text-decoration: none;
   padding: 5px;
+  background-color: #ffffff;
   color: #151311;
   border: 4px solid #151311;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 nav a:hover {
   color: #ffffff;
   background-color: #151311;
+}
+
+/* Style carousel */
+.carousel {
+  width: 95vw;
+  margin: auto 2.5%;
+  overflow: hidden;
+}
+
+/* Style the sections slides */
+.section-slides {
+  margin-top: 20px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section-slides > section {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 95vw;
+  height: 70vh;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.section-slides::-webkit-scrollbar {
+  height: 0;
 }
