@@ -8,9 +8,10 @@
   border: none;
 }
 
+/* Style body and headers */
 body{
   font-family: Nunito, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #151311;
 }
 
@@ -20,8 +21,35 @@ h1, h2 {
   letter-spacing: 1px;
 }
 
+/* Style logo */
 #logo {
   font-size: 4em;
   text-align: center;
   margin: 20px;
+}
+
+/* Style navigation bar */
+nav {
+  font-family: "Odibee Sans", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+nav li {
+  display: inline;
+  margin: auto 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+  color: #151311;
+  border: 4px solid #151311;
+  border-radius: 15px;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #151311;
 }
