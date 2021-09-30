@@ -39,13 +39,36 @@
     <div class="carousel">
         <!--Sections-->
         <div class="section-slides">
+
+            <!--Home section working as a landing page-->
             <div id="home-section">
 
+                <!--Pop-up form-->
+                <div class="form-popup" id="feedback-form">
+                    <form class="form-container"action="https://formdump.codeinstitute.net" method="POST">
+                      <h2>Leave your feedback!</h2>
+                  
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="full-name" required>
+                  
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+
+                      <label for="comment">Comment</label>
+                      <textarea id="comment" name="comment" rows="3" required></textarea>
+                  
+                      <button type="submit">Send Feedback</button>
+                      <button id="cancel-btn" type="button">Close</button>
+                    </form>
+                </div>
+
+                <!--Main image-->
                 <div id="main-image">
-                    <img src="assets/images/main_image.jpg"
+                    <img src="assets/images/main-image.jpeg"
                         alt="The Thing, a paper, Edward Scissorhands, a lizard and Spock playing rock, paper, scissors, lizard, Spock">
                 </div>
-                
+
+                <!--Buttons-->
                 <button>Start Game</button>
 
                 <button>Feedback</button>
