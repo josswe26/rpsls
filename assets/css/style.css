@@ -73,7 +73,7 @@ nav a:hover {
   -webkit-overflow-scrolling: touch;
 }
 
-.section-slides > section {
+.section-slides > section, .section-slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 95vw;
@@ -107,4 +107,28 @@ footer a {
 footer p {
   margin-top: 10px;
   font-size: 0.8em;
+}
+
+/* Style home section and its content */
+#home-section > button {
+  font-family: "Odibee Sans", cursive;
+  letter-spacing: 1px;
+  font-size: 2em;
+  background-color: #789053;
+  display: block;
+  margin: 25px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+#main-image {
+  width: 100%;
+  height: fit-content;
+}
+
+#main-image img {
+  width: 100%;
+  height: fit content;
+  border-radius: 10px;
 }
