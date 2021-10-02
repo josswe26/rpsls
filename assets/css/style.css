@@ -18,7 +18,7 @@ body {
 
 h1, h2 {
   font-family: "Odibee Sans", cursive;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 1px;
 }
 
@@ -58,7 +58,7 @@ nav a:hover {
 
 /* Style carousel */
 .carousel {
-  width: 95vw;
+  width: 100%;
   margin: auto 2.5%;
   overflow: hidden;
 }
@@ -200,4 +200,26 @@ footer p {
 
 .form-container button:hover, .form-container #cancel-btn:hover {
   background-color: #ffffff;
+}
+
+/* Style instructions section and its content */
+#instructions-section h2, #instructions-section h3 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#instructions-section p {
+  text-align: justify;
+  margin: 20px;
+}
+
+#instructions-section ul {
+  text-align: center;
+  margin: 20px;
+  list-style-type: none;
+}
+
+#instructions-section i {
+  font-size: 1.5em;
+  margin: 10px;
 }
