@@ -29,12 +29,18 @@ h1, h2 {
   margin: 20px;
 }
 
-/* Style navigation bar */
-nav {
+/* Style btn class */
+.btn {
   font-family: "Odibee Sans", cursive;
   letter-spacing: 1px;
-  text-align: center;
   font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Style navigation bar */
+nav {
+  text-align: center;
 }
 
 nav li {
@@ -48,7 +54,6 @@ nav a {
   background-color: #ffffff;
   color: #151311;
   border: 4px solid #151311;
-  border-radius: 10px;
 }
 
 nav a:hover {
@@ -74,6 +79,7 @@ nav a:hover {
 }
 
 .section-slides > section, .section-slides > div {
+  position: relative;
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 95vw;
@@ -110,20 +116,13 @@ footer p {
 }
 
 /* Style home section and its content */
-#home-section {
-  position: relative;
-}
-
 #home-section > button {
-  font-family: "Odibee Sans", cursive;
-  letter-spacing: 1px;
   font-size: 2em;
   background-color: #789053;
   display: block;
   margin: 25px auto;
   padding: 10px;
   width: 250px;
-  border-radius: 10px;
 }
 
 #home-section > button:hover {
@@ -141,9 +140,8 @@ footer p {
   border-radius: 10px;
 }
 
-/* Pop up form styling - hidden by deafult */
-.form-popup {
-  display: none;
+/* Style pop-ups throught the website*/
+.popup {
   width: 250px;
   top: 25px;
   left: 0; 
@@ -151,7 +149,12 @@ footer p {
   margin: auto;
   text-align: center;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 10px
+}
+
+/* Pop up form styling - hidden by deafult */
+.form-popup {
+  display: none;
 }
 
 .form-popup h2 {
@@ -181,15 +184,10 @@ footer p {
 }
 
 .form-container button {
-  font-family: "Odibee Sans", cursive;
-  font-size: 1.5em;
-  letter-spacing: 1px;
   width: 80%;
   background-color: #789053;
-  border-radius: 10px;
   color: #151311;
   padding: 16px 20px;
-  cursor: pointer;
   margin: 0 auto 10px;
   opacity: 1;
 }
@@ -225,9 +223,6 @@ footer p {
 }
 
 /* Style game section and its content */
-#game-section{
-  position: relative;
-} 
 
 /* Style score area */
 .user-score-label {
@@ -270,70 +265,66 @@ footer p {
   margin: 10px;
 }
 
-.game-buttons button {
+.game-btn {
   background-color: transparent;
   font-size: 2em;
   padding: 5px;
   margin: 10px 10px 0 0;
   border: 3px solid;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #rules-btn {
   position: absolute;
   bottom: 5px;
   right: 20px;
-  font-family: "Odibee Sans", cursive;
   background-color: #789053;
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  border-radius: 10px;
-  color: #151311;
   padding: 5px;
   margin: 0 auto 10px;
 }
 
-/* Button hover effects */
-.rock-btn {
+#rock-btn {
   color: #bf834a;
 }
 
-.lizard-btn {
+#lizard-btn {
   color: #789053;
 }
 
-.spock-btn {
+#spock-btn {
   color: #344b99;
 }
 
-.rock-btn:hover {
+/* Button hover effects */
+#rock-btn:hover {
+  color: #ffffff;
   border-color: #bf834a;
-  background-color: #bf834a;
-  color: #ffffff;
+  background-color: #bf834a;;
 }
 
-.paper-btn:hover {
+#paper-btn:hover {
+  color: #ffffff;
   border-color: #151311;
   background-color: #151311;
-  color: #ffffff;
 }
 
-.scissors-btn:hover {
+#scissors-btn:hover {
+  color: #ffffff;
   border-color: #151311;
   background-color: #151311;
-  color: #ffffff;
 }
 
-.lizard-btn:hover {
+#lizard-btn:hover {
+  color: #ffffff;
   border-color: #789053;
   background-color: #789053;
-  color: #ffffff;
 }
 
-.spock-btn:hover {
+#spock-btn:hover {
+  color: #ffffff;
   border-color: #344b99;
   background-color: #344b99;
-  color: #ffffff;
 }
 
 #rules-btn:hover {
@@ -343,14 +334,6 @@ footer p {
 /* Pop up rules styling - hidden by deafult */
 .rules-popup {
   display: none;
-  width: 250px;
-  top: 25px;
-  left: 0; 
-  right: 0;
-  margin: auto;
-  text-align: center;
-  position: absolute;
-  border-radius: 10px;
 }
 
 .rules-container {
@@ -371,15 +354,10 @@ footer p {
 }
 
 .rules-container button {
-  font-family: "Odibee Sans", cursive;
-  font-size: 1.5em;
-  letter-spacing: 1px;
   width: 80%;
   background-color: #789053;
-  border-radius: 10px;
   color: #151311;
   padding: 16px 20px;
-  cursor: pointer;
-  margin: 20px auto; 
+  margin: 20px auto;
   opacity: 1;
 }
