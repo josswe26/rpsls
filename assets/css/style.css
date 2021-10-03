@@ -230,12 +230,12 @@ footer p {
 } 
 
 /* Style score area */
-#user-score {
+.user-score-label {
   margin: 20px;
   float: left;
 }
 
-#computer-score {
+.computer-score-label {
   margin: 20px;
   float: right;
 }
@@ -258,6 +258,11 @@ footer p {
 #game-feedback {
   text-align: center;
   margin-top: 20px;
+}
+
+#result {
+  font-size: 1.25em;
+  margin-bottom: 10px;
 }
 
 .game-buttons {
