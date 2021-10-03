@@ -173,7 +173,6 @@ footer p {
   border: 2px solid #ffffff;
   border-radius: 10px;
   background: #151311ef;
-  
   opacity: 0.8;
 }
 
@@ -252,7 +251,7 @@ footer p {
 }
 
 .game-area i {
-  font-size: 3.5em;
+  font-size: 4em;
 }
 
 /* Style feedback and buttons area */
@@ -266,25 +265,13 @@ footer p {
   margin: 10px;
 }
 
-.game-buttons i {
+.game-buttons button {
+  background-color: transparent;
   font-size: 2em;
-  padding: 10px;
+  padding: 5px;
   margin: 10px 10px 0 0;
   border: 3px solid;
   border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.rock-btn {
-  color: #bf834a;
-}
-
-.lizard-btn {
-  color: #789053;
-}
-
-.spock-btn {
-  color: #344b99;
 }
 
 #rules-btn {
@@ -299,6 +286,53 @@ footer p {
   color: #151311;
   padding: 5px;
   margin: 0 auto 10px;
+}
+
+/* Button hover effects */
+.rock-btn {
+  color: #bf834a;
+}
+
+.lizard-btn {
+  color: #789053;
+}
+
+.spock-btn {
+  color: #344b99;
+}
+
+.rock-btn:hover {
+  border-color: #bf834a;
+  background-color: #bf834a;
+  color: #ffffff;
+}
+
+.paper-btn:hover {
+  border-color: #151311;
+  background-color: #151311;
+  color: #ffffff;
+}
+
+.scissors-btn:hover {
+  border-color: #151311;
+  background-color: #151311;
+  color: #ffffff;
+}
+
+.lizard-btn:hover {
+  border-color: #789053;
+  background-color: #789053;
+  color: #ffffff;
+}
+
+.spock-btn:hover {
+  border-color: #344b99;
+  background-color: #344b99;
+  color: #ffffff;
+}
+
+#rules-btn:hover {
+  background-color: #bf834a;
 }
 
 /* Pop up rules styling - hidden by deafult */
