@@ -74,6 +74,7 @@
                 <button>Feedback</button>
             </div>
 
+            <!--Instructions section-->
             <section id="instructions-section">
                 <h2>Instructions</h2>
                 <h3>
@@ -94,9 +95,43 @@
                 </ul>
             </section>
 
-            <section id="game-section">
-                Game section
-            </section>
+            <!--Game section-->
+            <div id="game-section">
+
+                <!--Score area-->
+                <div class="score-area">
+                    <h2 id="user-score">You: <span>0</span></h2>
+                    <h2 id="computer-score">Computer: <span>0</span></h2>
+                </div>
+                
+                <!--Game area-->
+
+                <div class="game-area">
+                    <h2>Your choice:</h2>
+                    <span></span>
+                    <h2>VS.</h2>
+                    <h2>Computer choice:</h2>
+                    <span></span>
+                </div>
+
+                <!--Game feedback-->
+                <div id="game-feedback">
+                    <h3 id="result"></h3>
+                    <h3>Choose your weapon:</h3>
+                </div>
+                
+                <!--Game buttons-->
+                <div class="game-buttons">
+                    <button data-type="rock" class="rock-btn"><i class="fas fa-hand-rock"></i></button>
+                    <button data-type="paper" class="paper-btn"><i class="far fa-hand-paper"></i></button>
+                    <button data-type="scissors" class="scissors-btn"><i class="fas fa-hand-scissors"></i></button>
+                    <button data-type="lizard" class="lizard-btn"><i class="fas fa-hand-lizard"></i></button>
+                    <button data-type="spock" class="spock-btn"><i class="fas fa-hand-spock"></i></button>
+                </div>
+
+                <button id="rules-btn">Rules</button>
+
+            </div>
         </div>
     </div>
 

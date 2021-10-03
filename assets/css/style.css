@@ -58,7 +58,7 @@ nav a:hover {
 
 /* Style carousel */
 .carousel {
-  width: 100%;
+  width: 95%;
   margin: auto 2.5%;
   overflow: hidden;
 }
@@ -221,5 +221,81 @@ footer p {
 
 #instructions-section i {
   font-size: 1.5em;
+  margin: 0 0 10px 10px;
+}
+
+/* Style game section and its content */
+#game-section{
+  position: relative;
+} 
+
+/* Style score area */
+#user-score {
+  margin: 20px;
+  float: left;
+}
+
+#computer-score {
+  margin: 20px;
+  float: right;
+}
+
+/* Style game area */
+.game-area {
+  clear: both;
+  text-align: center;
+}
+
+.game-area h2 {
+  margin-top: 20px;
+}
+
+.game-area i {
+  font-size: 3.5em;
+}
+
+/* Style feedback and buttons area */
+#game-feedback {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-buttons {
+  text-align: center;
   margin: 10px;
+}
+
+.game-buttons i {
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border: 3px solid;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.rock-btn {
+  color: #bf834a;
+}
+
+.lizard-btn {
+  color: #789053;
+}
+
+.spock-btn {
+  color: #344b99;
+}
+
+#rules-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-family: "Odibee Sans", cursive;
+  background-color: #789053;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  color: #151311;
+  padding: 5px;
+  margin: 0 auto 10px;
 }
