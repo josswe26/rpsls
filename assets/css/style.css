@@ -110,6 +110,10 @@ footer p {
 }
 
 /* Style home section and its content */
+#home-section {
+  position: relative;
+}
+
 #home-section > button {
   font-family: "Odibee Sans", cursive;
   letter-spacing: 1px;
@@ -141,6 +145,7 @@ footer p {
 .form-popup {
   display: none;
   width: 250px;
+  top: 25px;
   left: 0; 
   right: 0;
   margin: auto;
@@ -150,13 +155,13 @@ footer p {
 }
 
 .form-popup h2 {
-  color: #ffffff;
   font-size: 2em;
   margin: 15px auto;
 }
 
 .form-container {
   padding: 10px;
+  color: #ffffff;
   background-color: #151311ef;
   border-radius: 10px;
 }
@@ -168,16 +173,12 @@ footer p {
   border: 2px solid #ffffff;
   border-radius: 10px;
   background: #151311ef;
-  color: #ffffff;
+  
   opacity: 0.8;
 }
 
 .form-container input:focus {
   border-color: #789053;
-}
-
-.form-container label {
-  color: #ffffff;
 }
 
 .form-container button {
@@ -194,7 +195,7 @@ footer p {
   opacity: 1;
 }
 
-.form-container #cancel-btn {
+#cancel-btn {
   background-color: #bf834a;
 }
 
@@ -298,4 +299,48 @@ footer p {
   color: #151311;
   padding: 5px;
   margin: 0 auto 10px;
+}
+
+/* Pop up rules styling - hidden by deafult */
+.rules-popup {
+  display: none;
+  width: 250px;
+  top: 25px;
+  left: 0; 
+  right: 0;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.rules-container {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #151311ef;
+  border-radius: 10px;
+}
+
+.rules-container h2 {
+  font-size: 2em;
+  margin: 15px auto;
+}
+
+.rules-container i {
+  font-size: 1.5em;
+  margin: 0 10px 10px;
+}
+
+.rules-container button {
+  font-family: "Odibee Sans", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  width: 80%;
+  background-color: #789053;
+  border-radius: 10px;
+  color: #151311;
+  padding: 16px 20px;
+  cursor: pointer;
+  margin: 20px auto; 
+  opacity: 1;
 }
