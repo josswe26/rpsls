@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             let buttonSelected = this.getAttribute("id");
             
-            console.log(buttonSelected);
+            openPopup(buttonSelected);
         })
     }
 
@@ -33,18 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             let buttonSelected = this.getAttribute("id");
             
-            console.log(buttonSelected);
+            closePopup(buttonSelected);
         })
     }
 
     //Add event listener to the start game button
     document.getElementById("start-game-btn").addEventListener("click", function() {
-        
-        console.log("Start button pressed")
+        window.location.href="#game-section";
     })
 })
 
-//Game code
+//Game functions
 
 function displayWeapon() {
 
@@ -70,14 +69,22 @@ function countRounds() {
 
 }
 
-//Popups code
+//Popups functions
 
-function openPopup() {
-    
+function openPopup(button) {
+    if (button === "open-feedback-btn") {
+        document.getElementById("feedback-form").style.display = "block";
+    } else if (button === "open-rules-btn") {
+        document.getElementById("rules").style.display = "block";
+    }
 }
 
-function closePopup() {
-
+function closePopup(button) {
+    if (button === "close-feedback-btn") {
+        document.getElementById("feedback-form").style.display = "none";
+    } else if (button === "close-rules-btn") {
+        document.getElementById("rules").style.display = "none";
+    }
 }
 
 
