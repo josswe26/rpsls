@@ -71,6 +71,9 @@ function countRounds() {
 
 //Popups functions
 
+/**
+ * Open the pop up when pressing the respective button
+ */
 function openPopup(button) {
     if (button === "open-feedback-btn") {
         document.getElementById("feedback-form").style.display = "block";
@@ -79,6 +82,9 @@ function openPopup(button) {
     }
 }
 
+/**
+ * Close the pop up if close button is pressed
+ */
 function closePopup(button) {
     if (button === "close-feedback-btn") {
         document.getElementById("feedback-form").style.display = "none";
