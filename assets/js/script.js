@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let userChoice = this.getAttribute("data-type");
             let userIcon = document.getElementById("user-icon");
 
-            console.log(userChoice, userIcon);
+            displayWeapon(userChoice, userIcon);
         })
     }
 
@@ -45,8 +45,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Game functions
 
-function displayWeapon() {
-
+/**
+ * Displays the icon being chosen by the user and the computer 
+ */
+ function displayWeapon(weapon, icon) {
+    if (weapon === "rock") {
+        icon.setAttribute("class", "fas fa-hand-rock");
+        icon.style.color = "#bf834a";
+    } else if (weapon === "paper") {
+        icon.setAttribute("class", "far fa-hand-paper");
+        icon.style.color = "#151311";
+    } else if (weapon === "scissors") {
+        icon.setAttribute("class", "fas fa-hand-scissors");
+        icon.style.color = "#151311";
+    } else if (weapon === "lizard") {
+        icon.setAttribute("class", "fas fa-hand-lizard");
+        icon.style.color = "#789053";
+    } else if (weapon === "spock") {
+        icon.setAttribute("class", "fas fa-hand-spock");
+        icon.style.color = "#344b99";
+    } else {
+        alert(`Unknown weapon type: ${weapon}`);
+        throw `Unknown weapon type: ${weapon}. Aborting!`
+    }
 }
 
 function computerWeapon() {
@@ -79,6 +100,9 @@ function openPopup(button) {
         document.getElementById("feedback-form").style.display = "block";
     } else if (button === "open-rules-btn") {
         document.getElementById("rules").style.display = "block";
+    } else {
+        alert(`Unknown button: ${button}`);
+        throw `Unknown butoon: ${button}. Aborting!`
     }
 }
 
@@ -90,6 +114,9 @@ function closePopup(button) {
         document.getElementById("feedback-form").style.display = "none";
     } else if (button === "close-rules-btn") {
         document.getElementById("rules").style.display = "none";
+    } else {
+        alert(`Unknown button: ${button}`);
+        throw `Unknown button: ${button}. Aborting!`
     }
 }
 
