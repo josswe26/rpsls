@@ -92,6 +92,9 @@ function computerWeapon() {
     displayWeapon(computerChoice, computerIcon);
 }
 
+/**
+ * Compare user and computer's weapons and select winner
+ */
 function compareWeapons() {
     let userWeapon = document.getElementById("user-icon").getAttribute("class").split("-")[2];
     let computerWeapon = document.getElementById("computer-icon").getAttribute("class").split("-")[2];
@@ -103,66 +106,94 @@ function compareWeapons() {
     
     //Rock chosen by the user
     else if (userWeapon === "rock" && computerWeapon === "paper") {
-        document.getElementById("result").textContent = "Paper covers rock, you lose :("
+        document.getElementById("result").textContent = "Paper covers rock, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "rock" && computerWeapon === "scissors") {
-        document.getElementById("result").textContent = "Rock crushes scissors, you win!"
+        document.getElementById("result").textContent = "Rock crushes scissors, you win!";
+        increaseUserScore();
     } else if (userWeapon === "rock" && computerWeapon === "lizard") {
-        document.getElementById("result").textContent = "Rock crushes lizard, you win!"
+        document.getElementById("result").textContent = "Rock crushes lizard, you win!";
+        increaseUserScore();
     } else if (userWeapon === "rock" && computerWeapon === "spock") {
-        document.getElementById("result").textContent = "Spock vaporizes rock, you lose :("
+        document.getElementById("result").textContent = "Spock vaporizes rock, you lose :(";
+        increaseComputerScore();
     }
 
     //Paper chosen by the user
     else if (userWeapon === "paper" && computerWeapon === "rock") {
-        document.getElementById("result").textContent = "Paper covers rock, you win!"
+        document.getElementById("result").textContent = "Paper covers rock, you win!";
+        increaseUserScore();
     } else if (userWeapon === "paper" && computerWeapon === "scissors") {
-        document.getElementById("result").textContent = "Scissors cuts paper, you lose :("
+        document.getElementById("result").textContent = "Scissors cuts paper, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "paper" && computerWeapon === "lizard") {
-        document.getElementById("result").textContent = "Lizard eats paper, you lose :("
+        document.getElementById("result").textContent = "Lizard eats paper, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "paper" && computerWeapon === "spock") {
-        document.getElementById("result").textContent = "Paper disproves Spock, you win!"
+        document.getElementById("result").textContent = "Paper disproves Spock, you win!";
+        increaseUserScore();
     }
 
     //Scissors chosen by the user
     else if (userWeapon === "scissors" && computerWeapon === "rock") {
-        document.getElementById("result").textContent = "Rock crushes scissors, you lose :("
+        document.getElementById("result").textContent = "Rock crushes scissors, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "scissors" && computerWeapon === "paper") {
-        document.getElementById("result").textContent = "Scissors cuts paper, you win!"
+        document.getElementById("result").textContent = "Scissors cuts paper, you win!";
+        increaseUserScore();
     } else if (userWeapon === "scissors" && computerWeapon === "lizard") {
-        document.getElementById("result").textContent = "Scissors decapitates lizard, you win!"
+        document.getElementById("result").textContent = "Scissors decapitates lizard, you win!";
+        increaseUserScore();
     } else if (userWeapon === "scissors" && computerWeapon === "spock") {
-        document.getElementById("result").textContent = "Spock smashes scissors, you lose :("
+        document.getElementById("result").textContent = "Spock smashes scissors, you lose :(";
+        increaseComputerScore();
     }
 
     //Lizard chosen by the user
     else if (userWeapon === "lizard" && computerWeapon === "rock") {
-        document.getElementById("result").textContent = "Rock crushes lizard, you lose :("
+        document.getElementById("result").textContent = "Rock crushes lizard, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "lizard" && computerWeapon === "paper") {
-        document.getElementById("result").textContent = "Lizard eats paper, you win!"
+        document.getElementById("result").textContent = "Lizard eats paper, you win!";
+        increaseUserScore();
     } else if (userWeapon === "lizard" && computerWeapon === "scissors") {
-        document.getElementById("result").textContent = "Scissors decapitates lizard, you lose :("
+        document.getElementById("result").textContent = "Scissors decapitates lizard, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "lizard" && computerWeapon === "spock") {
-        document.getElementById("result").textContent = "Lizard poisons Spock, you win!"
+        document.getElementById("result").textContent = "Lizard poisons Spock, you win!";
+        increaseUserScore();
     }
 
     //Spock chosen by the user
     else if (userWeapon === "spock" && computerWeapon === "rock") {
-        document.getElementById("result").textContent = "Spock vaporizes rock, you win!"
+        document.getElementById("result").textContent = "Spock vaporizes rock, you win!";
+        increaseUserScore();
     } else if (userWeapon === "spock" && computerWeapon === "paper") {
-        document.getElementById("result").textContent = "Paper disproves Spock, you lose :("
+        document.getElementById("result").textContent = "Paper disproves Spock, you lose :(";
+        increaseComputerScore();
     } else if (userWeapon === "spock" && computerWeapon === "scissors") {
-        document.getElementById("result").textContent = "Spock smashes scissor, you win!"
+        document.getElementById("result").textContent = "Spock smashes scissor, you win!";
+        increaseUserScore();
     } else if (userWeapon === "spock" && computerWeapon === "lizard") {
-        document.getElementById("result").textContent = "Lizard poisons Spock, you lose :("
+        document.getElementById("result").textContent = "Lizard poisons Spock, you lose :(";
+        increaseComputerScore();
     }
 }
 
+/**
+ * Get current user score from the DOM and increment it by 1
+ */
 function increaseUserScore() {
-
+    let oldScore = parseInt(document.getElementById("user-score").textContent);
+    document.getElementById("user-score").textContent = ++oldScore;
 }
 
+/**
+ * Get current computer score from the DOM and increment it by 1
+ */
 function increaseComputerScore() {
-
+    let oldScore = parseInt(document.getElementById("computer-score").textContent);
+    document.getElementById("computer-score").textContent = ++oldScore;
 }
 
 function countRounds() {
