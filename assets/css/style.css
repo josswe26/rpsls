@@ -192,7 +192,7 @@ footer p {
   opacity: 1;
 }
 
-#cancel-btn {
+#close-feedback-btn, #close-rules-btn {
   background-color: #bf834a;
 }
 
@@ -275,7 +275,7 @@ footer p {
   cursor: pointer;
 }
 
-#rules-btn {
+#open-rules-btn {
   position: absolute;
   bottom: 5px;
   right: 20px;
