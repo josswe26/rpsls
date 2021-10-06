@@ -49,12 +49,18 @@ document.addEventListener("DOMContentLoaded", function () {
  * Contain the main game functionality, called when the user select their first weapon
  */
 function runGame(choice, icon) {
+    let gameFinished = false;
 
     displayWeapon(choice, icon);
+
     computerWeapon();
 
     compareWeapons();
-    countRounds();
+    gameFinished = countRounds();
+
+    if (gameFinished) {
+        clearScore()
+    }
 }
 
 /**
@@ -103,8 +109,8 @@ function compareWeapons() {
     //Same weapom selected
     if (userWeapon === computerWeapon) {
         document.getElementById("result").textContent = "It's a draw!";
-    } 
-    
+    }
+
     //Rock chosen by the user
     else if (userWeapon === "rock" && computerWeapon === "paper") {
         document.getElementById("result").textContent = "Paper covers rock, you lose :(";
@@ -204,13 +210,22 @@ function countRounds() {
     let userScore = parseInt(document.getElementById("user-score").textContent);
     let computerScore = parseInt(document.getElementById("computer-score").textContent);
 
-    if (userScore  >= 3 || computerScore >= 3) {
+    if (userScore >= 3 || computerScore >= 3) {
         if (userScore > computerScore) {
-            document.getElementById("result").textContent = "You win!"
+            document.getElementById("result").textContent = `You win ${userScore}-${computerScore}!`;
+            return true;
         } else if (userScore < computerScore) {
-            document.getElementById("result").textContent = "You lose :("
+            document.getElementById("result").textContent = `You lose ${userScore}-${computerScore} :(`;
+            return true;
         }
+    } else {
+        return false;
     }
+}
+
+function clearScore() {
+    document.getElementById("user-score").textContent = 0;
+    document.getElementById("computer-score").textContent = 0;
 }
 
 //Popups functions

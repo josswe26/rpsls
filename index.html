@@ -86,6 +86,9 @@
                     it at the same time. The winner is the one who defeats the others. In a tie, the process is repeated
                     until a winner is found.
                 </p>
+                <p>
+                    In this version, the best player out of 5 round is the final winner.
+                </p>
                 <h3>Weapons</h3>
                 <ul>
                     <li>Rock <i class="fas fa-hand-rock"></i></li>
@@ -104,7 +107,7 @@
                     <h2 class="user-score-label">You: <span id="user-score">0</span></h2>
                     <h2 class="computer-score-label">Computer: <span id="computer-score">0</span></h2>
                 </div>
-                
+
                 <!--Game area-->
                 <div class="game-area">
                     <h2>Your choice:</h2>
@@ -120,7 +123,7 @@
                     <h3>Choose your weapon:</h3>
                 </div>
 
-                
+
                 <!--Game buttons-->
                 <div class="game-buttons">
                     <button data-type="rock" id="rock-btn" class="game-btn" aria-label="Button to play rock.">
@@ -129,7 +132,8 @@
                     <button data-type="paper" id="paper-btn" class="game-btn" aria-label="Button to play paper.">
                         <i class="far fa-hand-paper"></i>
                     </button>
-                    <button data-type="scissors" id="scissors-btn" class="game-btn" aria-label="Button to play scissors.">
+                    <button data-type="scissors" id="scissors-btn" class="game-btn"
+                        aria-label="Button to play scissors.">
                         <i class="fas fa-hand-scissors"></i>
                     </button>
                     <button data-type="lizard" id="lizard-btn" class="game-btn" aria-label="Button to play lizard.">
@@ -147,16 +151,26 @@
                     <div class=rules-container>
                         <h2>Rules</h2>
                         <ul>
-                            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> cuts <i class="far fa-hand-paper" aria-label="Paper"></i></li>
-                            <li><i class="far fa-hand-paper" aria-label="Paper"></i> covers <i class="fas fa-hand-rock" aria-label="Rock"></i></li>
-                            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i class="fas fa-hand-lizard" aria-label="Lizard"></i></li>
-                            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> poisons <i class="fas fa-hand-spock" aria-label="Spock"></i></li>
-                            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> smashes <i class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
-                            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> decapitates <i class="fas fa-hand-lizard" aria-label="Lizard"></i></li>
-                            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> eats <i class="far fa-hand-paper" aria-label="Paper"></i></li>
-                            <li><i class="far fa-hand-paper" aria-label="Paper"></i> disproves <i class="fas fa-hand-spock" aria-label="Spock"></i></li>
-                            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> vaporizes <i class="fas fa-hand-rock" aria-label="Rock"></i></li>
-                            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
+                            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> cuts <i
+                                    class="far fa-hand-paper" aria-label="Paper"></i></li>
+                            <li><i class="far fa-hand-paper" aria-label="Paper"></i> covers <i class="fas fa-hand-rock"
+                                    aria-label="Rock"></i></li>
+                            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i class="fas fa-hand-lizard"
+                                    aria-label="Lizard"></i></li>
+                            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> poisons <i
+                                    class="fas fa-hand-spock" aria-label="Spock"></i></li>
+                            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> smashes <i
+                                    class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
+                            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> decapitates <i
+                                    class="fas fa-hand-lizard" aria-label="Lizard"></i></li>
+                            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> eats <i class="far fa-hand-paper"
+                                    aria-label="Paper"></i></li>
+                            <li><i class="far fa-hand-paper" aria-label="Paper"></i> disproves <i
+                                    class="fas fa-hand-spock" aria-label="Spock"></i></li>
+                            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> vaporizes <i
+                                    class="fas fa-hand-rock" aria-label="Rock"></i></li>
+                            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i
+                                    class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
                         </ul>
                         <button class="btn close-popup-btn" id="close-rules-btn" type="button">Close</button>
                     </div>
