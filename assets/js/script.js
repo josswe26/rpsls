@@ -54,6 +54,7 @@ function runGame(choice, icon) {
     computerWeapon();
 
     compareWeapons();
+    countRounds();
 }
 
 /**
@@ -196,8 +197,20 @@ function increaseComputerScore() {
     document.getElementById("computer-score").textContent = ++oldScore;
 }
 
+/**
+ * Keep track on the number of rounds and display game result at the end
+ */
 function countRounds() {
+    let userScore = parseInt(document.getElementById("user-score").textContent);
+    let computerScore = parseInt(document.getElementById("computer-score").textContent);
 
+    if (userScore  >= 3 || computerScore >= 3) {
+        if (userScore > computerScore) {
+            document.getElementById("result").textContent = "You win!"
+        } else if (userScore < computerScore) {
+            document.getElementById("result").textContent = "You lose :("
+        }
+    }
 }
 
 //Popups functions
