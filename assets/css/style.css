@@ -396,7 +396,8 @@ footer p {
   }
 
   .carousel {
-    width: 70vh;
+    height: 70vh;
+    margin-top: 50px;
   }
 
   footer {
@@ -428,6 +429,11 @@ footer p {
 
   #instructions-section li {
     display: inline;
+  }
+
+  #instructions-section i {
+    display: inline;
+    margin-right: 20px;
   }
 
   .game-area h2 {
@@ -483,4 +489,112 @@ footer p {
   footer p {
     margin-top: 10px;
   }
+}
+
+/* Style small screen sizes from 640px tall and down */
+@media screen and (max-height: 640px) {
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  #logo {
+    font-size: 2em;
+  }
+
+  .section-slides>section,
+  .section-slides>div {
+    height: 65vh;
+  }
+
+  #main-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .form-popup {
+    top: 0.5px;
+  }
+
+  .popup h2 {
+    font-size: 1.5em;
+    margin: 5px auto;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    margin-bottom: 5px;
+  }
+
+  .form-container button {
+    width: fit-content;
+    margin: auto 10px;
+  }
+
+  .form-container button {
+    font-size: 1em;
+  }
+
+  #instructions-section h2,
+  #instructions-section h3 {
+    margin: 15px auto;
+  }
+
+  #instructions-section p {
+    font-size: 0.85em;
+    margin: 15px;
+  }
+
+  #instructions-section ul {
+    margin: 15px;
+  }
+
+  #instructions-section li {
+    font-size: 0.85em;
+  }
+
+  #instructions-section i {
+    font-size: 1em;
+  }
+
+  .user-score-label,
+  .computer-score-label {
+    margin: 15px;
+  }
+
+  .game-area h2 {
+    margin-top: 15px;
+  }
+
+  .game-area i {
+    font-size: 2em;
+  }
+
+  #result {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .game-buttons {
+    margin-top: 10px;
+  }
+
+  .game-btn {
+    margin: 5px 30px 0 0;
+  }
+
+  .rules-container i {
+    font-size: 1.2em;
+  }
+
+  .rules-container button {
+    margin: 5px auto;
+    width: 70%;
+}
+
 }
