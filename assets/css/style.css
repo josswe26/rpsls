@@ -16,7 +16,8 @@ body {
   background-color: #789053;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Odibee Sans", cursive;
   font-size: 2em;
   letter-spacing: 1px;
@@ -63,8 +64,9 @@ nav a:hover {
 
 /* Style carousel */
 .carousel {
-  width: 95%;
-  margin: auto 2.5%;
+  width: 95vw;
+  max-width: 500px;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -78,12 +80,15 @@ nav a:hover {
   -webkit-overflow-scrolling: touch;
 }
 
-.section-slides > section, .section-slides > div {
+.section-slides>section,
+.section-slides>div {
   position: relative;
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 95vw;
+  max-width: 500px;
   height: 70vh;
+  max-height: 600px;
   margin-right: 20px;
   border-radius: 10px;
   background: #ffffff;
@@ -116,7 +121,7 @@ footer p {
 }
 
 /* Style home section and its content */
-#home-section > button {
+#home-section>button {
   font-size: 2em;
   background-color: #789053;
   display: block;
@@ -125,7 +130,7 @@ footer p {
   width: 250px;
 }
 
-#home-section > button:hover {
+#home-section>button:hover {
   background-color: #bf834a;
 }
 
@@ -144,7 +149,7 @@ footer p {
 .popup {
   width: 250px;
   top: 25px;
-  left: 0; 
+  left: 0;
   right: 0;
   margin: auto;
   text-align: center;
@@ -169,7 +174,8 @@ footer p {
   border-radius: 10px;
 }
 
-.form-container input, .form-container textarea {
+.form-container input,
+.form-container textarea {
   display: block;
   padding: 15px;
   margin: 5px auto 15px;
@@ -188,21 +194,24 @@ footer p {
   width: 80%;
   background-color: #789053;
   color: #151311;
-  padding: 16px 20px;
+  padding: 10px;
   margin: 0 auto 10px;
   opacity: 1;
 }
 
-#close-feedback-btn, #close-rules-btn {
+#close-feedback-btn,
+#close-rules-btn {
   background-color: #bf834a;
 }
 
-.form-container button:hover, .form-container #cancel-btn:hover {
+.form-container button:hover,
+.form-container #cancel-btn:hover {
   background-color: #ffffff;
 }
 
 /* Style instructions section and its content */
-#instructions-section h2, #instructions-section h3 {
+#instructions-section h2,
+#instructions-section h3 {
   text-align: center;
   margin: 20px auto;
 }
@@ -301,7 +310,8 @@ footer p {
 #rock-btn:hover {
   color: #ffffff;
   border-color: #bf834a;
-  background-color: #bf834a;;
+  background-color: #bf834a;
+  ;
 }
 
 #paper-btn:hover {
@@ -358,7 +368,46 @@ footer p {
   width: 80%;
   background-color: #789053;
   color: #151311;
-  padding: 16px 20px;
+  padding: 10px;
   margin: 20px auto;
   opacity: 1;
+}
+
+@media screen and (min-height: 900px){
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  #logo {
+    margin: 30px;
+    font-size: 5em;
+  }
+
+  nav .btn {
+    font-size: 2em;
+  }
+
+  .carousel {
+    width: 70vh;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  footer li {
+    font-size: 2em;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+
 }

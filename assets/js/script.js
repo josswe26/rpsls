@@ -223,6 +223,9 @@ function countRounds() {
     }
 }
 
+/**
+ * Clears the score to start a new game
+ */
 function clearScore() {
     document.getElementById("user-score").textContent = 0;
     document.getElementById("computer-score").textContent = 0;
