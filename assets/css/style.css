@@ -204,6 +204,11 @@ footer p {
   background-color: #bf834a;
 }
 
+#close-feedback-btn:hover,
+#close-rules-btn:hover {
+  background-color: #ffffff;
+}
+
 .form-container button:hover,
 .form-container #cancel-btn:hover {
   background-color: #ffffff;
@@ -406,6 +411,10 @@ footer p {
 
   footer li {
     font-size: 2em;
+  }
+
+  footer a:hover {
+    color: #ffffff;
   }
 
   footer p {

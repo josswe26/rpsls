@@ -9,6 +9,7 @@ This website is created to play this game against the computer while having fun.
 1. [User Experience (UX)](#user-experience-UX)
     1. [Project Goals](#project-goals)
     2. [User Stories](#user-stories)
+    3. [Color Scheme](#color-scheme)
 
 ***
 
@@ -39,3 +40,11 @@ This website is created to play this game against the computer while having fun.
 * As a player, I want to receive overall feedback during and after the game.
 
 * As a player, I want to be able to play the game on different devices.
+
+### Color Scheme
+
+![Color scheme image](assets/readme-files/color-scheme.png)
+
+The colors used in the site are white (#ffffff) for the navbar, slides background and some hover effects, a tone of orange (#bf834a) for closing buttons and buttons' hover effect, a tone of green (#789053) for the background and buttons, a blue color (#344b99) and a dark color (#151311) for the text.
+
+These colors are inspired on the game's main image. Each color represent this way the 5 different weapons (rock, paper, scissors, lizard and Spock) used in the game.
