@@ -373,8 +373,9 @@ footer p {
   opacity: 1;
 }
 
-@media screen and (min-height: 900px){
-  
+/* Style screen sizes from 900px tall and up */
+@media screen and (min-height: 900px) {
+
   body {
     display: flex;
     flex-direction: column;
@@ -408,6 +409,37 @@ footer p {
 
   footer p {
     font-size: 1em;
+  }
+
+}
+
+/* Style small screen sizes from 800px tall and down */
+@media screen and (max-height: 800px) {
+
+  #main-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .rules-popup {
+    top: 1px;
+  }
+
+  .form-popup {
+    top: 5px;
+  }
+
+  #instructions-section li {
+    display: inline;
+  }
+
+  .game-area h2 {
+    display: inline;
+  }
+
+  #vs-label {
+    display: block;
   }
 
 }
