@@ -422,10 +422,6 @@ footer p {
     border-radius: 10px;
   }
 
-  .rules-popup {
-    top: 1px;
-  }
-
   .form-popup {
     top: 5px;
   }
@@ -442,4 +438,49 @@ footer p {
     display: block;
   }
 
+  .rules-popup {
+    top: 1px;
+  }
+
+}
+
+/* Style small screen sizes 700px tall and down */
+@media screen and (max-height: 700px) {
+
+  #logo {
+    font-size: 3em;
+    margin: 15px;
+  }
+
+  .btn {
+    font-size: 1em;
+  }
+
+  #home-section>button {
+    font-size: 1.5em;
+    margin: 15px auto;
+    width: 200px;
+  }
+
+  .popup h2 {
+    font-size: 2em;
+    margin: 10px auto;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    margin-bottom: 10px;
+  }
+
+  .rules-container i {
+    margin-bottom: 7px;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+
+  footer p {
+    margin-top: 10px;
+  }
 }
