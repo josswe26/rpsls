@@ -45,6 +45,22 @@ This website is created to play this game against the computer while having fun.
 
 ![Color scheme image](assets/readme-files/color-scheme.png)
 
-The colors used in the site are white (#ffffff) for the navbar, slides background and some hover effects, a tone of orange (#bf834a) for closing buttons and buttons' hover effect, a tone of green (#789053) for the background and buttons, a blue color (#344b99) and a dark color (#151311) for the text.
+The colors used in the site are white (#ffffff) for the navigation bar, slides background and some hover effects, a tone of orange (#bf834a) for closing buttons and buttons' hover effect, a tone of green (#789053) for the background and buttons, a blue color (#344b99) and a dark color (#151311) for the text.
 
-These colors are inspired on the game's main image. Each color represent this way the 5 different weapons (rock, paper, scissors, lizard and Spock) used in the game.
+The colors scheme is inspired on the game's main image. Each color represent this way the 5 different weapons (rock, paper, scissors, lizard and Spock) used in the game.
+
+### Typography
+
+The main font used in the site is Nunito, as suggested by Google Fonts for appropriate pairings with Odibee Sans, with Sans Serif as the fallback font in case Nunito is not being imported correctly. Odibee Sans is used for the headings and the logo for the gaming design it provides with Cursive as fallback.
+
+### Wireframes
+
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+
+Page | Wireframe
+--- | ---
+Home section | ![Home section wireframe image](assets/wireframes/home-section.png)
+Instructions section | ![Instructions wireframe image](assets/wireframes/instructions-section.png)
+Game section| ![Game section wireframe image](assets/wireframes/game-section.png)
+Feedback | ![Feedback wireframe image](assets/wireframes/feedback.png)
+Rules | ![Rules wireframe image](assets/wireframes/rules.png)
