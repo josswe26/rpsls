@@ -500,8 +500,9 @@ footer p {
   }
 }
 
-/* Style small screen sizes from 640px tall and down */
-@media screen and (max-height: 640px) {
+/* Style small screen sizes from 640px tall or 320px wide and down */
+@media screen and (max-height: 640px),
+screen and (max-width: 320px) {
 
   h1,
   h2 {
@@ -604,6 +605,6 @@ footer p {
   .rules-container button {
     margin: 5px auto;
     width: 70%;
-}
+  }
 
 }
