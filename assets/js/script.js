@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("start-game-btn").addEventListener("click", function () {
         window.location.href = "#game-section";
     });
+
+    //Add event listener to the play again button
+    document.getElementById("play-again-btn").addEventListener("click", function () {
+        document.getElementById("result-div").style.display = "none";
+        clearScore();
+    });
+
 });
 
 //Game functions
@@ -49,18 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
  * Contain the main game functionality, called when the user select their first weapon
  */
 function runGame(choice, icon) {
-    let gameFinished = false;
-
+    
     displayWeapon(choice, icon);
 
     computerWeapon();
 
     compareWeapons();
-    gameFinished = countRounds();
-
-    if (gameFinished) {
-        clearScore();
-    }
+    
+    countRounds();
 }
 
 /**
@@ -213,10 +216,7 @@ function countRounds() {
     if (userScore >= 3 || computerScore >= 3) {
         document.getElementById("result-div").style.display = "block";
         displayResult(userScore, computerScore);
-        return true;
-    } else {
-        return false;
-    }
+    } 
 }
 
 /**
@@ -243,6 +243,14 @@ function displayResult(userScore, computerScore) {
 function clearScore() {
     document.getElementById("user-score").textContent = 0;
     document.getElementById("computer-score").textContent = 0;
+
+    document.getElementById("result").textContent = "Waiting...";
+
+    document.getElementById("user-icon").setAttribute("class", "fas fa-question");
+    document.getElementById("user-icon").style.color = "#151311";
+
+    document.getElementById("computer-icon").setAttribute("class", "fas fa-question");
+    document.getElementById("computer-icon").style.color = "#151311";
 }
 
 //Popups functions
