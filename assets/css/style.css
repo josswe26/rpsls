@@ -378,6 +378,26 @@ footer p {
   opacity: 1;
 }
 
+/* Style block landscape div*/
+#block-landscape {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #151311;
+  width: 100vw;
+  height: 100vh;
+}
+
+#block-landscape p {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 120px 30px;
+}
+
 /* Style 404 error page */
 #wrapper-404 {
   position: absolute;
@@ -412,7 +432,7 @@ footer p {
 
 #text-404 {
   position: relative;
-} 
+}
 
 #text-404 p {
   margin: 20px;
@@ -434,7 +454,7 @@ footer p {
 /* Style screen sizes from 900px tall and up */
 @media screen and (min-height: 900px) {
 
- body {
+  body {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -661,11 +681,29 @@ screen and (max-width: 320px) {
   }
 
   #title-404 {
-  margin-top: 0;
+    margin-top: 0;
   }
 
   #gif-404 {
     margin-top: 15px;
+  }
+
+}
+
+/* Style small screen sizes from 500px tall and down to block landscape on mobiles */
+@media screen and (max-height: 500px) {
+
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #block-landscape {
+    display: block;
   }
 
 }
