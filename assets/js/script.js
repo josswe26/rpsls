@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let userIcon = document.getElementById("user-icon");
 
             runGame(userChoice, userIcon);
-        })
+        });
     }
 
     //Add event listener to buttons opening the popups
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let buttonSelected = this.getAttribute("id");
 
             openPopup(buttonSelected);
-        })
+        });
     }
 
     //Add event listener to close buttons on the popups
@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
             let buttonSelected = this.getAttribute("id");
 
             closePopup(buttonSelected);
-        })
+        });
     }
 
     //Add event listener to the start game button
     document.getElementById("start-game-btn").addEventListener("click", function () {
         window.location.href = "#game-section";
-    })
-})
+    });
+});
 
 //Game functions
 
@@ -59,7 +59,7 @@ function runGame(choice, icon) {
     gameFinished = countRounds();
 
     if (gameFinished) {
-        clearScore()
+        clearScore();
     }
 }
 
@@ -84,7 +84,7 @@ function displayWeapon(weapon, icon) {
         icon.style.color = "#344b99";
     } else {
         alert(`Unknown weapon type: ${weapon}`);
-        throw `Unknown weapon type: ${weapon}. Aborting!`
+        throw `Unknown weapon type: ${weapon}. Aborting!`;
     }
 }
 
@@ -211,15 +211,29 @@ function countRounds() {
     let computerScore = parseInt(document.getElementById("computer-score").textContent);
 
     if (userScore >= 3 || computerScore >= 3) {
-        if (userScore > computerScore) {
-            document.getElementById("result").textContent = `You win ${userScore}-${computerScore}!`;
-            return true;
-        } else if (userScore < computerScore) {
-            document.getElementById("result").textContent = `You lose ${userScore}-${computerScore} :(`;
-            return true;
-        }
+        document.getElementById("result-div").style.display = "block";
+        displayResult(userScore, computerScore);
+        return true;
     } else {
         return false;
+    }
+}
+
+/**
+ * Opens div to display result at the end of the game
+ */
+function displayResult(userScore, computerScore) {
+    let resultDiv = document.getElementById("result-div");
+    let resultMessage = document.getElementById("result-message");
+    let resultGif = document.getElementById("result-gif");
+
+    if (userScore > computerScore) {
+        resultMessage.textContent = `You win ${userScore}-${computerScore}!`;
+    } else if (userScore < computerScore) {
+        resultMessage.textContent = `You lose ${userScore}-${computerScore} :(`;
+        resultDiv.style.backgroundColor = "#bf834a";
+        resultGif.src = "assets/images/gif-lose.gif";
+        resultGif.alt = 'Spock saying "pulverized"';
     }
 }
 
@@ -243,7 +257,7 @@ function openPopup(button) {
         document.getElementById("rules").style.display = "block";
     } else {
         alert(`Unknown button: ${button}`);
-        throw `Unknown butoon: ${button}. Aborting!`
+        throw `Unknown butoon: ${button}. Aborting!`;
     }
 }
 
@@ -257,6 +271,6 @@ function closePopup(button) {
         document.getElementById("rules").style.display = "none";
     } else {
         alert(`Unknown button: ${button}`);
-        throw `Unknown button: ${button}. Aborting!`
+        throw `Unknown button: ${button}. Aborting!`;
     }
 }
