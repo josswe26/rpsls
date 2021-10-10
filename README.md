@@ -64,3 +64,5 @@ Instructions section | ![Instructions wireframe image](assets/wireframes/instruc
 Game section| ![Game section wireframe image](assets/wireframes/game-section.png)
 Feedback | ![Feedback wireframe image](assets/wireframes/feedback.png)
 Rules | ![Rules wireframe image](assets/wireframes/rules.png)
+
+[Back to top ⇧](#rpsls)
