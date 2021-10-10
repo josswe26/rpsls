@@ -378,24 +378,59 @@ footer p {
   opacity: 1;
 }
 
-/* Style block landscape div*/
-#block-landscape {
-  display: none;
+/* Style fullscreen divs */
+.fullscreen-div {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
-  background-color: #151311;
   width: 100vw;
   height: 100vh;
+}
+
+/* Style block landscape div*/
+#block-landscape {
+  display: none;
+  background-color: #151311;
 }
 
 #block-landscape p {
   color: #ffffff;
   font-size: 1.5em;
   margin: 120px 30px;
+}
+
+/* Style result div*/
+#result-div {
+  display: none;
+  background-color: #789053;
+}
+
+#result-message {
+  font-size: 3em;
+  margin: 100px auto 20px;
+}
+
+#gif-wrapper {
+  width: 100vw;
+}
+
+#result-gif {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+#result-div a {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #151311;
+  border: 4px solid #151311;
+  margin: 0 20px;
 }
 
 /* Style 404 error page */
