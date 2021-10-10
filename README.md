@@ -21,6 +21,9 @@ This website is created to play this game against the computer while having fun.
 6. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
 7. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+    3. [Code](#code)
 8. [Acknowledgements](#acknowledgements)
 
 ***
@@ -157,3 +160,28 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 
 [Back to top ⇧](#rpsls)
 
+## Credits
+
+### Content
+
+* The instructions and rules were taken from the [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
+
+### Media
+
+* The main image was taken from [TeePublic](https://www.teepublic.com/t-shirt/17021-rock-paper-scissors) and was designed by [Samiel](https://www.teepublic.com/user/samiel).
+
+* The GIF used in the 404 error page was taken from [GIPHY](https://giphy.com/gifs/paper-bag-breathing-aa9VQ6gg5wCBy).
+
+### Code
+
+* [Stack Overflow](https://stackoverflow.com/), [CSS-Tricks](https://css-tricks.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration and sometimes to be able to better understand the code being implement.
+
+* The code for the carousel is a modified version of the CSS-Tricks code found [here](https://css-tricks.com/css-only-carousel/ ).
+
+* The code for the popups is a modified version of the W3Schools code found [here](https://www.w3schools.com/howto/howto_js_popup_form.asp).
+
+[Back to top ⇧](#rpsls)
+
+## Acknowledgements
+
+[Back to top ⇧](#rpsls)
