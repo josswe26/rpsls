@@ -16,6 +16,12 @@ This website is created to play this game against the computer while having fun.
 3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+4. [Testing](#testing)
+5. [Finished Product](#finished-product)
+6. [Deployment](#deployment)
+    1. [GitHub Pages](#github-pages)
+7. [Credits](#credits)
+8. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -120,3 +126,34 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
     - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 
 [Back to top ⇧](#rpsls)
+
+## Testing
+
+[Back to top ⇧](#rpsls)
+
+## Finished Product
+
+[Back to top ⇧](#rpsls)
+
+## Deployment
+
+* This website was developed using [GitPod](https://www.gitpod.io/), which was then committed and pushed to GitHub using the GitPod terminal.
+
+### GitHub Pages
+
+* Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
+
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+
+    2. At the top of the Repository, locate the Settings button on the menu.
+
+        - Alternatively click [here](https://raw.githubusercontent.com/) for a GIF demostration of the process.
+
+    3. Scroll down the Settings page until you locate the Pages section.
+
+    4. Under Source, click the dropdown called None and select Master Branch.
+
+    5. The page will refresh automatically and generate a link to your website.
+
+[Back to top ⇧](#rpsls)
+
