@@ -228,12 +228,12 @@ function displayResult(userScore, computerScore) {
     let resultGif = document.getElementById("result-gif");
 
     if (userScore > computerScore) {
-        resultMessage.textContent = `You win ${userScore}-${computerScore}!`;
+        resultMessage.textContent = `You win ${userScore}-${computerScore}`;
         resultDiv.style.backgroundColor = "#789053";
         resultGif.src = "assets/images/gif-win.gif";
         resultGif.alt = "Human Torch kissing The Thing in the head";
     } else if (userScore < computerScore) {
-        resultMessage.textContent = `You lose ${userScore}-${computerScore} :(`;
+        resultMessage.textContent = `You lose ${userScore}-${computerScore}`;
         resultDiv.style.backgroundColor = "#bf834a";
         resultGif.src = "assets/images/gif-lose.gif";
         resultGif.alt = 'Spock saying "pulverized"';

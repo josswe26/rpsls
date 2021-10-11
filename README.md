@@ -1,10 +1,14 @@
 # RPSLS
 
+![RPSLS mockup images](assets/readme-files/mockup-image.png)
+
 Rock Paper Scissors Lizard Spock (RPSLS) is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. This variant was mentioned in a 2005 article in The Times of London and was later the subject of an episode of the American sitcom The Big Bang Theory in 2008.
 
-This website is created to play this game against the computer while having fun. The game is entirely based on chance and the website is easy to navigate in order to find the rules, the game area and feedback form in case the user wants to leave any comments.
+This website is created to have fun playing this game against the computer. The game is entirely based on chance and the website is easy to navigate in order to easily find the rules, the game area and the feedback form in case the user wants to leave any comments.
 
-## Table of contents
+Visit the deployed website [here](https://josswe26.github.io/rpsls/).
+
+## Table of Contents
 
 1. [User Experience (UX)](#user-experience-UX)
     1. [Project Goals](#project-goals)
@@ -13,6 +17,12 @@ This website is created to play this game against the computer while having fun.
     4. [Typography](#typography)
     5. [Wireframes](#wireframes)
 2. [Features](#features)
+    1. [General](#general)
+    2. [Home Section](#home-section)
+    3. [Instructions Section](#instructions-section)
+    4. [Game section](#game-section)
+    5. [Result Section](#result-section)
+    6. [404 Error Page](#404-error-page)
 3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
@@ -83,6 +93,103 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 [Back to top ⇧](#rpsls)
 
 ## Features
+
+### General
+
+* The website has been designed from a mobile first perspective.
+
+* Responsive design across all device sizes.
+
+* **Header**
+![Header image](assets/readme-files/header.jpg)
+
+    - The header contains the main logo and a navigation bar positioned on top of the main content.
+
+    - The navigation bar contains links to all sections to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the player for a better user experience.
+
+* **Carousel**
+
+![Carousel gif](assets/readme-files/carousel.gif)
+
+- A carousel design has been chosen to present the site content in order give more interactivity to the site and make it easy to navigate between the different sections.
+
+* **Footer**
+![Footer image](assets/readme-files/footer.jpg)
+
+    - The footer include links to the sites' social media channels.
+
+### Home Section
+![Home section image](assets/readme-files/home-section.png)
+
+* **Main Image**
+    - The main image has been selected to represent the game in a fun way in order to engage the player.
+
+* **Main Buttons**
+    - The start game button work as a link to the game section.
+
+    - The feedback button open the feedback popup.
+
+* **Background**
+    - A video background has been added to devices with screens 1024px wide and up to add some animation to large displays.
+
+* **Feedback Form Popup**
+
+![Feedback popup gif](assets/readme-files/feedback-popup.gif)
+
+- Provide the player a popup form accessible from the home section to be able to submit their feedback.
+
+### Instructions Section
+![Instructions section image](assets/readme-files/instructions-section.png)
+
+* The instructions section provides information to the player on how to play the game and present the weapons available in the game.
+
+### Game section
+![Game section gif](assets/readme-files/game-section.gif)
+
+* **Score Area**
+    - Keep track of the points obtained by the player and the computer and present the current score to the player.
+
+* **Game Area**
+    - Display the weapons chosen by the player and the computer on each round.
+
+* **Game Feedback**
+    - Provide feedback regarding the result of the the last round to the player.
+
+* **Game Buttons**
+    - Allow the player to select the desired weapon to be used in the next round.
+
+* **Rules Button**
+    - Open the rules popup.
+
+* **Rules Popup**
+
+![Rules popup gif](assets/readme-files/rules-popup.gif)
+
+- Provide the player a popup containing the game rules to make them easy accessible from the game section.
+
+### Result Section
+![Result section image](assets/readme-files/result-section.png)
+
+* The result section is an adaptable section that display the result of the game.
+
+* **Result Title**
+    - Displays the final score and if the player win or lose.
+
+* **GIF Image**
+    - Display a fun GIF that adapts depending on the game result.
+
+* **Section Buttons**
+    - The play again button close the result section to make the game available once again, clearing the last round.
+
+    - The main menu button work as a link to the home section.
+
+* **Section Background**
+    - The background display different color depending on the game result to provide better feedback to the player.
+
+### 404 Error Page
+![404 error page image](assets/readme-files/404-error-page.png)
+
+*  This single page is being shown in case the customer enters an incorrect address into the address bar. It contains a link to the home section.
 
 [Back to top ⇧](#rpsls)
 
@@ -172,6 +279,8 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 
 * The GIF used in the 404 error page was taken from [GIPHY](https://giphy.com/gifs/paper-bag-breathing-aa9VQ6gg5wCBy).
 
+* The background video was taken from [Pexels](https://www.pexels.com/video/arrow-shape-design-on-green-background-4665103/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) and was created by [Miguel Á. Padriñán](https://www.pexels.com/@padrinan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels). 
+
 ### Code
 
 * [Stack Overflow](https://stackoverflow.com/), [CSS-Tricks](https://css-tricks.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration and sometimes to be able to better understand the code being implement.
@@ -179,6 +288,8 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 * The code for the carousel is a modified version of the CSS-Tricks code found [here](https://css-tricks.com/css-only-carousel/ ).
 
 * The code for the popups is a modified version of the W3Schools code found [here](https://www.w3schools.com/howto/howto_js_popup_form.asp).
+
+* The code to apply the full screen background was found at [CSS-Tricks](https://css-tricks.com/full-page-background-video-styles/).
 
 [Back to top ⇧](#rpsls)
 
