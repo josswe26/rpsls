@@ -16,6 +16,18 @@ body {
   background-color: #789053;
 }
 
+/* Style video */
+#bg-video {
+  display: none;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 h1,
 h2 {
   font-family: "Odibee Sans", cursive;
@@ -737,6 +749,24 @@ screen and (max-width: 320px) {
   }
 
   #block-landscape {
+    display: block;
+  }
+
+}
+
+/* Style large screen sizes from 1024px wide and up to show background video */
+@media screen and (min-width: 1024px) {
+
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #bg-video {
     display: block;
   }
 
