@@ -2,7 +2,7 @@
 
 ![RPSLS mockup images](assets/readme-files/mockup-image.png)
 
-Rock Paper Scissors Lizard Spock (RPSLS) is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. This variant was mentioned in a 2005 article in The Times of London and was later the subject of an episode of the American sitcom The Big Bang Theory in 2008.
+Rock Paper Scissors Lizard Spock (RPSLS) is an extension of the classic game of chance, Rock Paper Scissors, created by Sam Kass and Karen Bryla. This variant was mentioned in a 2005 article in *The Times* of London and was later the subject of an episode of the American sitcom *The Big Bang Theory* in 2008.
 
 This website is created to have fun playing this game against the computer. The game is entirely based on chance and the website is easy to navigate in order to easily find the rules, the game area and the feedback form in case the user wants to leave any comments.
 
@@ -53,7 +53,7 @@ Visit the deployed website [here](https://josswe26.github.io/rpsls/).
 
 * Responsive design to make the game accessible on different devices.
 
-* Incorporates a rules section that is easy accessible to the player.
+* Incorporates a rules section that is easily accessible to the player.
 
 * A feedback section is provided to get comments from the player in order to further develop the website.
 
@@ -77,7 +77,7 @@ Visit the deployed website [here](https://josswe26.github.io/rpsls/).
 
 The colors used in the site are white (#ffffff) for the navigation bar, slides background and some hover effects, a tone of orange (#bf834a) for closing buttons and buttons' hover effect, a tone of green (#789053) for the background and buttons, a blue color (#344b99) and a dark color (#151311) for the text.
 
-The colors scheme is inspired on the game's main image. Each color represent this way the 5 different weapons (rock, paper, scissors, lizard and Spock) used in the game.
+The colors scheme is inspired on the game's main image. This way each color represents the 5 different weapons (rock, paper, scissors, lizard and Spock) used in the game.
 
 ### Typography
 
@@ -425,6 +425,18 @@ iPhone 7 | No appearance, responsiveness nor functionality issues. | Pass
 
 ## Finished Product
 
+Page / Section | Image
+--- | ---
+Desktop Version | ![Desktop version image](assets/readme-files/desktop-version.png)
+Home Section | ![Home section image](assets/readme-files/full-home-section.png)
+Feedback Popup | ![Feedback popup image](assets/readme-files/full-feedback-popup.png)
+Instructions Section | ![Home section image](assets/readme-files/full-instructions-section.png)
+Game Section | ![Game section image](assets/readme-files/full-game-section.png)
+Rules Popup | ![Rules popup image](assets/readme-files/full-rules-popup.png)
+Result Sections | ![Result section image](assets/readme-files/result-section.png)
+Landscape Orientation Blocker | ![Landscape image](assets/readme-files/landscape-blocker.png)
+404 Error Page | ![404 error page image](assets/readme-files/404-error-page.png)
+
 [Back to top ⇧](#rpsls)
 
 ## Deployment
@@ -476,5 +488,15 @@ iPhone 7 | No appearance, responsiveness nor functionality issues. | Pass
 [Back to top ⇧](#rpsls)
 
 ## Acknowledgements
+
+* My partner, for her unconditional love, help and continued support in all aspects of life to make possible for me to complete this project.
+
+* My family, for their valuable opinions, critics and support during the design and development process.
+
+* My tutor, Marcel, for his invaluable feedback and guidance.
+
+* My friend, Miguel, for all the late calls, support and ideas that made me challenge myself.
+
+* Code Institute and its amazing Slack community for their support and providing me with the necessary knowledge to complete this project.
 
 [Back to top ⇧](#rpsls)
