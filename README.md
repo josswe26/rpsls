@@ -240,6 +240,9 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 * [JSHint](https://jshint.com/) 
     - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 
+* [Favicon.cc](https://www.favicon.cc/) 
+    - Favicon.cc was used to create the site favicon.
+
 [Back to top ⇧](#rpsls)
 
 ## Testing
@@ -289,6 +292,46 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 * As a player, I want to be able to play the game on different devices.
 
     - Responsive design across all device sizes.
+
+    ### Code Validation
+
+* The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
+
+    - W3C Markup Validator returned a series of warnings concerning a possible misuse of aria-label. I considered this aria labels are being used to make available the icons in the rules popup available for the visually impaired.
+
+    -  W3C CSS Validator found no errors or warnings on my CSS.
+
+* The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used validate the site's JavaScript code.
+
+    - JSHints found no errors on the site's JavaScript code.
+
+### Accessibility
+
+* Used Lighthouse in Chrome DevTools to confirm that the colors and fonts being used in throughout the website are easy to read and accessible.
+
+* Lighthouse reports
+
+    - **index.html**
+
+    ![Lighthouse report for landing page image](assets/readme-files/lighthouse-report-index.png)
+
+    - **404.html**
+
+    ![Lighthouse report for treatmenst page image](assets/readme-files/lighthouse-report-404.png)
+
+### Tools Testing
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+
+    - Chrome DevTools was used during the development process to test, explore and modify HTML elements and CSS styles used in the project.
+
+* Responsiveness
+
+    - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
+
+    - [Responsive Design Checker](https://www.responsivedesignchecker.com/) was used to check responsiveness of the site pages on different screen sizes.
+
+    - Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
 
 [Back to top ⇧](#rpsls)
 
