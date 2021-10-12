@@ -27,6 +27,11 @@ Visit the deployed website [here](https://josswe26.github.io/rpsls/).
     1. [Languages Used](#languages-used)
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 4. [Testing](#testing)
+    1. [Testing User Stories](#testing-user-stories)
+    2. [Code Validation](#code-validation)
+    3. [Accessibility](#accessibility)
+    4. [Tools Testing](#tools-testing)
+    5. [Manual Testing](#manual-testing)
 5. [Finished Product](#finished-product)
 6. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
@@ -116,7 +121,7 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 * **Footer**
 ![Footer image](assets/readme-files/footer.jpg)
 
-    - The footer include links to the sites' social media channels.
+    - The footer include links to the site's social media channels.
 
 ### Home Section
 ![Home section image](assets/readme-files/home-section.png)
@@ -238,6 +243,52 @@ Rules | ![Rules wireframe image](assets/wireframes/rules.png)
 [Back to top ⇧](#rpsls)
 
 ## Testing
+
+### Testing User Stories
+
+* As a player, I want the game's website to be easy to navigate.
+
+    - A carousel design has been implemented to move across the different sections with ease.
+
+    - The website offers an intuitive structure for the player to find easily the information or section they are looking for.
+
+    - The navigation bar is clearly presented to assist with the site's navigation.
+
+* As a player, I want the game to be fun and engaging.
+
+    - A fun main image has been selected to represent the game in a fun way.
+
+    - The site's color design has been inspired on the main image in order to create a clear relation between each color used and the weapons available in the game.
+    
+    - The game area display the weapons chosen by both the player and the computer in their respective colors and icons.
+
+    - The score for the current round is being tracked and displayed on the top of the game section.
+
+    - Feedback area display the result for each round with a short explanation.
+
+    - The game result is provided in a fun way with adaptable colors and GIFs depending on the result.
+
+* As a player, I want to have easy access to the game rules.
+
+    - A rules bottom is being provided directly on the game section.
+
+    - The rules open on a popup directly on the game section so the player does not need to leave the game.
+
+* As a player, I want the game controls to be easy to access during the game.
+
+    - All the game buttons are being provided on the bottom of the game section for easy access.
+
+* As a player, I want to receive overall feedback during and after the game.
+
+    - Score for the current round is always available on the top of the game section.
+
+    - The result for each round is being provided with a short explanation.
+
+    - A clear game result gets displayed after the game.
+
+* As a player, I want to be able to play the game on different devices.
+
+    - Responsive design across all device sizes.
 
 [Back to top ⇧](#rpsls)
 
