@@ -381,6 +381,10 @@ footer p {
   margin: 0 10px 10px;
 }
 
+.rules-container ul {
+  list-style-type: none;
+}
+
 .rules-container button {
   width: 80%;
   background-color: #789053;
